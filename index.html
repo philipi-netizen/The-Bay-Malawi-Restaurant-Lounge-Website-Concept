@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Bay — Restaurant & Lounge</title>
+  <meta
+    name="description"
+    content="The Bay — food, atmosphere and experiences in Lilongwe and Blantyre, Malawi."
+  >
+
+  <!-- Performance hints for above-the-fold assets -->
+  <link rel="preload" as="image" href="assets/images/the-bay-hero.jpg">
+  <link rel="preload" as="image" href="assets/images/the-bay-logo.png">
+
+  <!-- Stylesheet added in the CSS phase -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       PRELOADER
+  ========================================================== -->
+  <div
+    class="preloader"
+    id="preloader"
+    aria-label="Loading The Bay"
+  >
+    <img
+      src="assets/images/logo.png"
+      alt="The Bay"
+      class="preloader__logo"
+      width="240"
+      height="auto"
+    >
+  </div>
+
+
+  <!-- =========================================================
+       SITE HEADER / NAVIGATION
+  ========================================================== -->
+  <header class="site-header" id="site-header">
+
+    <nav
+      class="navbar"
+      aria-label="Primary navigation"
+    >
+
+      <a
+        href="#top"
+        class="navbar__logo"
+        aria-label="The Bay — Home"
+      >
+        <img
+          src="assets/images/logo.png"
+          alt="The Bay"
+          width="140"
+          height="auto"
+        >
+      </a>
+
+      <button
+        class="navbar__toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <div class="navbar__links" id="desktop-navigation">
+        <a href="#experience" data-nav-link>Experience</a>
+        <a href="#food" data-nav-link>Food</a>
+        <a href="#occasions" data-nav-link>Occasions</a>
+        <a href="#locations" data-nav-link>Locations</a>
+        <a href="#contact" data-nav-link>Contact</a>
+      </div>
+
+      <a
+        href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20The%20Bay."
+        class="navbar__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Enquire
+      </a>
+
+    </nav>
+
+
+    <!-- Mobile Navigation -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-hidden="true"
+    >
+
+      <div class="mobile-menu__inner">
+
+        <p class="mobile-menu__label">The Bay</p>
+
+        <ul class="mobile-menu__links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#occasions">Occasions</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a
+          href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20The%20Bay."
+          class="mobile-menu__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp The Bay
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main id="top">
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+    <section
+      class="hero"
+      id="hero"
+      aria-labelledby="hero-title"
+    >
+
+      <div class="hero__media">
+        <img
+          src="assets/images/hero.png"
+          alt="The Bay restaurant atmosphere and dining experience"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+
+        <p class="hero__eyebrow">
+          Lilongwe · Blantyre
+        </p>
+
+        <h1 id="hero-title">
+          Come for the food.<br>
+          Stay for the experience.
+        </h1>
+
+        <p class="hero__intro">
+          Food, atmosphere and good company at The Bay.
+        </p>
+
+        <div class="hero__actions">
+
+          <a
+            href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20The%20Bay."
+            class="button button--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp The Bay
+          </a>
+
+          <a
+            href="#experience"
+            class="button button--secondary"
+          >
+            Explore The Bay
+          </a>
+
+        </div>
+
+      </div>
+
+      <a
+        href="#experience"
+        class="hero__scroll"
+        aria-label="Scroll to explore The Bay"
+      >
+        <span aria-hidden="true">Scroll</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+
+    </section>
+
+
+    <!-- =======================================================
+         INTRO / EXPERIENCE
+    ======================================================== -->
+    <section
+      class="section intro"
+      id="experience"
+      aria-labelledby="intro-title"
+    >
+
+      <div class="section__container">
+
+        <p class="section__eyebrow">
+          The Bay
+        </p>
+
+        <h2 id="intro-title">
+          More than a meal.
+        </h2>
+
+        <div class="intro__content">
+
+          <p class="intro__lead">
+            A place to eat, gather, celebrate and stay awhile.
+          </p>
+
+          <p>
+            The Bay brings together food, people and atmosphere —
+            creating a restaurant and lounge experience across
+            Lilongwe and Blantyre.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         THREE WORLDS
+    ======================================================== -->
+    <section
+      class="section bay-worlds"
+      id="food"
+      aria-labelledby="worlds-title"
+    >
+
+      <div class="section__container">
+
+        <header class="section__header">
+          <p class="section__eyebrow">The Bay</p>
+
+          <h2 id="worlds-title">
+            Three ways into The Bay.
+          </h2>
+        </header>
+
+
+        <div class="bay-worlds__grid">
+
+          <!-- Crispy Bay -->
+          <article class="bay-world">
+
+            <a href="#" class="bay-world__link">
+
+              <div class="bay-world__image">
+                <img
+                  src="assets/images/crispy.jpg"
+                  alt="Crispy Bay food"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="bay-world__content">
+                <span class="bay-world__number">01</span>
+                <h3>Crispy Bay</h3>
+                <span class="bay-world__arrow" aria-hidden="true">↗</span>
+              </div>
+
+            </a>
+
+          </article>
+
+
+          <!-- Spice Bay -->
+          <article class="bay-world">
+
+            <a href="#" class="bay-world__link">
+
+              <div class="bay-world__image">
+                <img
+                  src="assets/images/spicy.jpg"
+                  alt="Spice Bay food"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="bay-world__content">
+                <span class="bay-world__number">02</span>
+                <h3>Spice Bay</h3>
+                <span class="bay-world__arrow" aria-hidden="true">↗</span>
+              </div>
+
+            </a>
+
+          </article>
+
+
+          <!-- Smoky Bay -->
+          <article class="bay-world">
+
+            <a href="#" class="bay-world__link">
+
+              <div class="bay-world__image">
+                <img
+                  src="assets/images/smoky.jpg"
+                  alt="Smoky Bay food"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="bay-world__content">
+                <span class="bay-world__number">03</span>
+                <h3>Smoky Bay</h3>
+                <span class="bay-world__arrow" aria-hidden="true">↗</span>
+              </div>
+
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TAWA EXPERIENCE
+    ======================================================== -->
+    <section
+      class="section tawa"
+      aria-labelledby="tawa-title"
+    >
+
+      <div class="tawa__media">
+
+        <img
+          src="assets/images/experiance.jpg"
+          alt="Tawa dish served at The Bay"
+          width="1800"
+          height="1200"
+          loading="lazy"
+        >
+
+      </div>
+
+      <div class="tawa__overlay" aria-hidden="true"></div>
+
+      <div class="tawa__content section__container">
+
+        <p class="section__eyebrow">
+          Signature
+        </p>
+
+        <h2 id="tawa-title">
+          The Tawa<br>
+          Experience.
+        </h2>
+
+        <p>
+          Rich textures, bold flavours and food made for the table.
+        </p>
+
+        <a
+          href="#"
+          class="button button--light"
+        >
+          Explore the menu
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ATMOSPHERE / LOUNGE
+    ======================================================== -->
+    <section
+      class="section atmosphere"
+      aria-labelledby="atmosphere-title"
+    >
+
+      <div class="section__container">
+
+        <div class="atmosphere__grid">
+
+          <div class="atmosphere__content">
+
+            <p class="section__eyebrow">
+              After hours
+            </p>
+
+            <h2 id="atmosphere-title">
+              Stay for the atmosphere.
+            </h2>
+
+            <p>
+              From shared meals and family moments to evenings
+              spent with friends, The Bay is designed around
+              the experience of being together.
+            </p>
+
+          </div>
+
+
+          <div class="atmosphere__gallery">
+
+            <figure class="atmosphere__image atmosphere__image--large">
+              <img
+                src="assets/images/atm-1.png"
+                alt="Guests enjoying the atmosphere at The Bay"
+                width="1200"
+                height="1500"
+                loading="lazy"
+              >
+            </figure>
+
+            <figure class="atmosphere__image atmosphere__image--small">
+              <img
+                src="assets/images/atm-2.png"
+                alt="Evening atmosphere at The Bay"
+                width="900"
+                height="1100"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         OCCASIONS
+    ======================================================== -->
+    <section
+      class="section occasions"
+      id="occasions"
+      aria-labelledby="occasions-title"
+    >
+
+      <div class="section__container">
+
+        <div class="occasions__intro">
+
+          <p class="section__eyebrow">
+            Gather here
+          </p>
+
+          <h2 id="occasions-title">
+            Make it an occasion.
+          </h2>
+
+          <p>
+            From birthdays and family gatherings to group and
+            corporate occasions, enquire with The Bay about
+            your next gathering.
+          </p>
+
+        </div>
+
+
+        <div class="occasions__grid">
+
+          <a href="#" class="occasion">
+            <span>01</span>
+            <h3>Birthdays</h3>
+          </a>
+
+          <a href="#" class="occasion">
+            <span>02</span>
+            <h3>Family Dining</h3>
+          </a>
+
+          <a href="#" class="occasion">
+            <span>03</span>
+            <h3>Group Dining</h3>
+          </a>
+
+          <a href="#" class="occasion">
+            <span>04</span>
+            <h3>Corporate Functions</h3>
+          </a>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20hosting%20an%20event."
+          class="button button--primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Enquire about an event
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         LOCATIONS
+    ======================================================== -->
+    <section
+      class="section locations"
+      id="locations"
+      aria-labelledby="locations-title"
+    >
+
+      <div class="section__container">
+
+        <header class="section__header">
+          <p class="section__eyebrow">Two cities</p>
+
+          <h2 id="locations-title">
+            Find your Bay.
+          </h2>
+        </header>
+
+
+        <div class="locations__grid">
+
+          <!-- Lilongwe -->
+          <article class="location">
+
+            <div class="location__image">
+              <img
+                src="assets/images/lilongwe.png"
+                alt="The Bay Lilongwe"
+                width="1200"
+                height="900"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="location__content">
+
+              <p class="location__city">
+                Lilongwe
+              </p>
+
+              <h3>
+                Paul Kagame Road
+              </h3>
+
+              <p>
+                Kirk area, Lilongwe
+              </p>
+
+              <div class="location__actions">
+
+                <a
+                  href="tel:+265995000058"
+                  class="button button--secondary"
+                >
+                  Call
+                </a>
+
+                <a
+                  href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20the%20Lilongwe%20location."
+                  class="button button--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+
+                <a
+                  href="#"
+                  class="button button--text"
+                >
+                  Directions
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Blantyre -->
+          <article class="location">
+
+            <div class="location__image">
+              <img
+                src="assets/images/blantyre.png"
+                alt="The Bay Blantyre"
+                width="1200"
+                height="900"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="location__content">
+
+              <p class="location__city">
+                Blantyre
+              </p>
+
+              <h3>
+                Kristwick Mall
+              </h3>
+
+              <p>
+                Chipembere Highway, Blantyre
+              </p>
+
+              <div class="location__actions">
+
+                <a
+                  href="tel:+265997867865"
+                  class="button button--secondary"
+                >
+                  Call
+                </a>
+
+                <a
+                  href="https://wa.me/265997867865?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20the%20Blantyre%20location."
+                  class="button button--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+
+                <a
+                  href="#"
+                  class="button button--text"
+                >
+                  Directions
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         FINAL CTA
+    ======================================================== -->
+    <section
+      class="section final-cta"
+      id="contact"
+      aria-labelledby="final-cta-title"
+    >
+
+      <div class="section__container">
+
+        <p class="section__eyebrow">
+          The Bay
+        </p>
+
+        <h2 id="final-cta-title">
+          Where are you<br>
+          dining tonight?
+        </h2>
+
+        <p>
+          Lilongwe · Blantyre
+        </p>
+
+        <a
+          href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20The%20Bay."
+          class="button button--primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp The Bay
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+
+    <div class="site-footer__container">
+
+      <div class="site-footer__brand">
+
+        <a
+          href="#top"
+          aria-label="The Bay — Back to top"
+        >
+          <img
+            src="assets/images/logo.png"
+            alt="The Bay"
+            width="150"
+            height="auto"
+            loading="lazy"
+          >
+        </a>
+
+        <p>
+          Lilongwe · Blantyre
+        </p>
+
+      </div>
+
+
+      <div class="site-footer__locations">
+
+        <div>
+          <h3>Lilongwe</h3>
+          <a href="tel:+265995000058">
+            +265 995 000 058
+          </a>
+        </div>
+
+        <div>
+          <h3>Blantyre</h3>
+          <a href="tel:+265997867865">
+            +265 997 867 865
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="site-footer__links">
+
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+
+      </div>
+
+
+      <div class="site-footer__social">
+
+        <!-- Replace # with verified social destinations -->
+        <a href="#" aria-label="The Bay on Instagram">
+          Instagram
+        </a>
+
+        <a href="#" aria-label="The Bay on Facebook">
+          Facebook
+        </a>
+
+      </div>
+
+
+      <div class="site-footer__credit">
+
+        <p>
+          Designed by Hipronia
+        </p>
+
+        <a
+          href="https://wa.me/265999469705?text=Hi%20Hipronia%2C%20I%27d%20like%20to%20enquire%20about%20a%20website."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          contact on WhatsApp 》
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       FLOATING WHATSAPP
+  ========================================================== -->
+  <a
+    href="https://wa.me/265995000058?text=Hi%20The%20Bay%2C%20I%27d%20like%20to%20enquire%20about%20The%20Bay."
+    class="floating-whatsapp"
+    aria-label="Contact The Bay on WhatsApp"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span aria-hidden="true">WhatsApp</span>
+  </a>
+
+
+  <!-- JavaScript added in the JS phase -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
+
